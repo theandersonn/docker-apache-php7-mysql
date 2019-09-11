@@ -26,7 +26,7 @@ http://localhost:4500
 
 **Acesso phpMyAdmin**
 ```txt
-http://localhost:4500:8080
+http://localhost:8080
 
 login: root
 senha: root
