@@ -19,6 +19,10 @@ docker-compose stop
 docker-compose down
 ```
 
+<p align="center">
+  <img alt="How-To Docker: Apache + PHP 7 + MySQL + phpMyAdmin" src="https://raw.githubusercontent.com/theandersonn/docker-apache-php7-mysql/master/how-to.gif">
+</p>
+
 **Acesso localhost**
 ```txt
 http://localhost:4500
