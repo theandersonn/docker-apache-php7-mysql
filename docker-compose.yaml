@@ -7,17 +7,19 @@ services:
       - "4500:80"
     volumes:
       - ./www:/app
-  
+
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root    
-  
+      MYSQL_ROOT_PASSWORD: root
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "8080:80"  
+      - "8080:80"
+    volumes:
+      - ./uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
